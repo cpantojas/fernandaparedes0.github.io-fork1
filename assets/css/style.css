@@ -111,13 +111,13 @@ main h3{
 }
 
 .section-about-me{
-    gap: 24px;
     max-width: 795px;
 }
 
 .details-about-me{
     max-width: 460px;
     text-align: left;
+    padding: 10px;
 }
 
 .details-about-me h5{
