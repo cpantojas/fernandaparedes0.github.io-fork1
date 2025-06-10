@@ -1,0 +1,328 @@
+:root {
+    /* Colors */
+    --blue: #29304F;
+    --black: #151515;
+    --white: #F7F7F7;
+    --lavender: #D9D1F5;
+    --coral: #FF6B6B;
+    --gray: #D9D1F5;
+
+    /* Headings */
+    --h1-regular: normal 400 47.8px/120% Roboto;
+    --h1-semibold: normal 600 47.8px/120% Roboto;
+    --h1-bold: normal 700 47.8px/120% Roboto;
+
+    --h2-regular: normal 400 39.8px/120% Roboto;
+    --h2-semibold: normal 600 39.8px/120% Roboto;
+    --h2-bold: normal 700 39.8px/120% Roboto;
+
+    --h3-regular: normal 400 33.2px/120% Roboto;
+    --h3-semibold: normal 600 33.2px/120% Roboto;
+    --h3-bold: normal 700 33.2px/120% Roboto;
+
+    --h4-regular: normal 400 27.6px/120% Roboto;
+    --h4-semibold: normal 600 27.6px/120% Roboto;
+    --h4-bold: normal 700 27.6px/120% Roboto;
+
+    --h5-regular: normal 400 23px/120% Roboto;
+    --h5-semibold: normal 600 23px/120% Roboto;
+    --h5-bold: normal 700 23px/120% Roboto;
+
+    --h6-regular: normal 400 19.2px/120% Roboto;
+    --h6-semibold: normal 600 19.2px/120% Roboto;
+    --h6-bold: normal 700 19.2px/120% Roboto;
+
+    /* Paragraph */
+    --p-regular: normal 400 16px/120% Roboto;
+    --p-semibold: normal 600 16px/120% Roboto;
+    --p-bold: normal 700 16px/120% Roboto;
+
+    /* Small */
+    --small-regular: normal 400 13.3px/110% Roboto;
+    --small-semibold: normal 600 13.3px/110% Roboto;
+    --small-bold: normal 700 13.3px/110% Roboto;
+
+    /* Smaller */
+    --smaller-regular: normal 400 11.1px/110% Roboto;
+    --smaller-semibold: normal 600 11.1px/110% Roboto;
+    --smaller-bold: normal 700 11.1px/110% Roboto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white);
+}
+
+/* nav */
+.custom-nav,
+.custom-nav .navbar-brand,
+.custom-nav .nav-link,
+.custom-nav .button-nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.custom-nav {
+    background-color: var(--blue);
+}
+
+.custom-nav a{
+    color: var(--white)
+}
+
+.button-nav {
+    border-radius: 60px;
+    color: var(--blue);
+    background-color: var(--coral);
+    padding: 14px 12px;
+    font: var(--p-semibold);
+    border: 0;
+}
+
+/* hero section */
+.hero-section{
+    background-image: url(../img/background-hero-section.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 334px;
+    padding: 56px;
+    box-sizing: border-box;
+}
+
+.hero-section h1{
+    font: var(--h1-bold);
+    color: var(--white);
+}
+
+.hero-section h5{
+    font-family: 'Raleway';
+    font-size: 23px;
+    line-height: 120%;
+    font-weight: 500;
+    color: var(--white);
+}
+
+/* about me */
+main h3{
+    text-align: center;
+    font: var(--h3-semibold);
+    color: var(--black);
+}
+
+.section-about-me{
+    gap: 24px;
+    max-width: 795px;
+}
+
+.details-about-me{
+    max-width: 460px;
+    text-align: left;
+}
+
+.details-about-me h5{
+    font: var(--h5-semibold);
+    color: var(--black)
+}
+
+.details-about-me ul{
+    margin: 0;
+    padding: 0px 16px;
+}
+
+/* skills */
+.skills{
+    max-width: 900px;
+    gap: 16px;
+}
+
+.skills h5{
+    font: var(--h5-semibold);
+    color: var(--black)
+}
+
+.tech{
+    /* se agrego display acá para no generar elementos innecesarios con bootstrap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 83px;
+    gap: 16px;
+}
+
+.icon-tech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lavender);
+    width: 67px;
+    height: 67px;
+    border-radius: 100%;
+}
+
+.tech span{
+    font: var(--smaller-semibold);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 4px 10px;
+    text-align: center;
+}
+
+/* training */
+.training h3{
+    font: var(--h3-semibold)
+}
+
+.training h5{
+    font: var(--h5-regular);
+    max-width: 300px;
+    text-align: center;
+}
+
+.training .card-header{
+    font: var(--h6-semibold)
+}
+
+.training .icon-header{
+    background-color: var(--lavender);
+    width: 24px; 
+    height: 24px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.training .card{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.training .card span{
+    font: var(--small-regular)
+}
+
+/* Experience */
+.experience h3{
+    font: var(--h3-semibold)
+}
+
+.experience h5{
+    font: var(--h5-regular);
+    max-width: 300px;
+    text-align: center;
+}
+
+.accordion-experience{
+    width: 39%;
+    min-width: 286px;
+}
+
+.accordion-experience details{
+    border: 1px solid var(--lavender);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    border-radius: 0.375rem;
+    margin-bottom: 16px;
+}
+
+.accordion-experience details:hover{
+    border: 1px solid rgb(93, 33, 150);
+}
+
+.accordion-experience summary{
+    font: var(--p-regular);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.accordion-experience .date{
+    font: var(--small-regular);
+    margin: 10px 0px 5px 0px;
+}
+
+.icon-summary{
+    background-color: var(--lavender);
+    width: 24px; 
+    height: 24px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+
+/* portafolio */
+/* card */
+.custom-h2{
+    font: var(--h2-semibold);
+    color: var(--black)
+}
+
+.card-body h6 .custom-title{
+    color: var(--black);
+    font: var(--h6-semibold);
+}
+
+.card-body h6 .custom-text{
+    color: var(--black);
+    font: var(--p-regular)
+}
+
+.contain-title-card{
+    width: 65%;
+}
+
+.contain-title-card h4{
+    font: var(--h4-semibold);
+
+}
+
+.contain-title-card h5{
+    font-family: 'Raleway';
+}
+
+
+
+/* footer */
+
+.icon-circle {
+  width: 32px;
+  height: 32px;
+  background: #d1c4e9;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #1b1b2f;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle:hover {
+  background: #b39ddb;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 5px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #b39ddb;
+  text-decoration: underline;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(to right, #2c2c54, #1e1e3f);
+}
+
