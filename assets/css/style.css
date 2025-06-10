@@ -79,6 +79,14 @@ body {
     border: 0;
 }
 
+.button-nav:hover {
+    background-color: #333d65;
+    color: var(--coral);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
 /* hero section */
 .hero-section{
     background-image: url(../img/background-hero-section.png);
