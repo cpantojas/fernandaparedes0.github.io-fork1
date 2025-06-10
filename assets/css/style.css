@@ -181,7 +181,8 @@ main h3{
 }
 
 .training .card-header{
-    font: var(--h6-semibold)
+    font: var(--h6-semibold);
+    color: var(--blue);
 }
 
 .training .icon-header{
