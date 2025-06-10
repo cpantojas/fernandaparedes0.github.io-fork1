@@ -119,23 +119,39 @@ main h3{
 }
 
 .section-about-me{
-    max-width: 795px;
+    max-width: 80%;
 }
 
 .details-about-me{
     max-width: 460px;
     text-align: left;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .details-about-me h5{
-    font: var(--h5-semibold);
+    font: var(--h5-regular);
     color: var(--black)
 }
 
 .details-about-me ul{
     margin: 0;
-    padding: 0px 16px;
+    padding: 0px;
+    list-style: none;
+    max-width: 400px;
+}
+
+.details-about-me ul li {
+  display: inline-block;
+  margin: 4px 10px 4px 0;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--lavender);
+  font-weight: 500;
+}
+
+.fa-check{
+    color: var(--blue);
+    margin-right: 10px;
 }
 
 /* skills */
@@ -235,6 +251,7 @@ main h3{
 
 .accordion-experience details:hover{
     border: 1px solid rgb(93, 33, 150);
+    transition: 0.6s ease;
 }
 
 .accordion-experience summary{
